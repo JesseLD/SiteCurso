@@ -1,0 +1,34 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');
+:root{
+    --fontDefault:'Roboto', sans-serif;
+    --fontDescription:'Noto Sans',sans-serif;
+    --clr0:#979F5E;
+    --clr1:#46495C;
+    --clr2:#132320;
+    --clr3:#B7FF7E;
+    --clr4:#67D47F;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+    background:#222327;
+}
+div.container{
+    background-image: linear-gradient(to bottom, #67D47F, #B7FF7E);
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 300px;
+}
