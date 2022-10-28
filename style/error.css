@@ -1,0 +1,76 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');
+:root{
+    --fontDefault:'Roboto', sans-serif;
+    --fontDescription:'Noto Sans',sans-serif;
+    --clr0:#979F5E;
+    --clr1:#46495C;
+    --clr2:#132320;
+    --clr3:#B7FF7E;
+    --clr4:#67D47F;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background:var(--clr4);
+    height: 100vh;
+    width: 100vw;
+    font-family: var(--fontDefault);
+}
+div.container{
+    display: flex;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+div.items{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+p.erro1{
+    padding: 10px;
+    font-size: 2.5em;
+    font-weight: bolder;
+    color: white;
+
+}
+p.erro2{
+    padding: 10px;
+    font-size: 1.3em;
+    font-weight: bolder;
+    color: white;
+
+}
+div.btn{
+    margin: 10px;
+
+}
+div.btn>a>button{
+    padding: 20px 120px;
+    border-radius: 5px;
+    background:var(--clr4);
+    color: white;
+    font-size: 1.2em;
+    border: 1px solid white;
+    transition: all 1s ease 0s;
+
+}
+div.btn>a>button:hover{
+    background: rgba(255, 255, 255, 0.603);
+    color: transparent;
+}
+div.image{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}

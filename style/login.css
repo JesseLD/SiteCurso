@@ -39,6 +39,7 @@ div.formBox{
     justify-content: center;
     border-radius: 30px;
     box-shadow: 0 0 50px 20px #b8ff7e2f;
+    
 }
 div.preForm{
     position: relative;
@@ -49,7 +50,7 @@ div.preForm{
 }
 div > form{
     position: relative;
-    top: 30%;
+    top: 15%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,7 +65,16 @@ div.email>input{
     width: 290px;
     border-radius: 10px 15px;
     border: solid 2px black;
+   
 }
+div.email>input:invalid{
+    animation: shake 0.2s ease;
+}
+div.password>input:invalid{
+    animation: shake 0.2s ease;
+}
+
+
 div.password>input{
     padding: 15px 10px;
     width: 290px;
@@ -86,17 +96,14 @@ div.btn>a>button{
     font-size: 1.4em;
     font-weight: bold;
     transition: all 1s ease 0s;
+    margin: 10px;
+    border: 1px solid var(--clr4);
 
 }
 div.btn>a>button:hover{
-
     color: var(--clr3);
-
     background: white;
     border: 1px solid black;
-
-}
-div.btn>a>{
 
 }
 div.signup{
@@ -106,4 +113,23 @@ div.signup{
 }
 div.signup>a{
     color: var(--clr4);
+}
+div.signup>a:hover{
+    color: var(--clr1);
+
+}
+div > label{
+    padding: 5px;
+}
+
+@keyframes shake {
+    0%{
+        transform: translateX(-4px);
+    }
+    50%{
+        transform: translateX(4px);
+    }
+    100%{
+        transform: translateX(-4px);
+    }
 }
